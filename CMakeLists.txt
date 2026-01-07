@@ -16,6 +16,10 @@ if(MSVC)
         /W4
         /WX
         /wd26812 # enum class warning noise
+        /Zi
+    )
+    add_link_options(
+        /DEBUG:FULL
     )
 else()
     message(FATAL_ERROR "pipetool is intended to be built with MSVC on Windows.")
