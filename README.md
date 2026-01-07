@@ -1,6 +1,8 @@
 # pipetool
 
-This is a quick-and-dirty tool to execute a couple of simple workflows on a named pipe. I used codex 5.1 to write the entire thing.
+This is a quick-and-dirty tool to execute a couple of simple workflows on a named pipe. 
+
+Written by codex 5.1
 
 # usage
 
