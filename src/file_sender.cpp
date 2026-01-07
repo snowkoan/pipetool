@@ -49,6 +49,7 @@ int stream_file(const std::wstring& pipe_name, const std::filesystem::path& file
         }
 
         pipe.write(std::span<const std::byte>(buffer.data(), buffer.size()));
+        logging::log_message(L"File sent", ERROR_SUCCESS);
 
         if (!::FlushFileBuffers(pipe.native_handle())) {
             const DWORD error = ::GetLastError();
